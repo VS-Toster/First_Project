@@ -1,42 +1,39 @@
 package ru.stqa.pft.sandbox;
 
-import java.sql.SQLOutput;
-
 public class MyFirstProgram {
-    public static void main(String[] args) {
-        double ara = 5;
-        double bara = 4;
-        double cara = 3;
-        System.out.println( "Площадь куба составит:" + " "+ areaOfCube(ara,bara,cara));
-    }
-/*
-        rout();
+    public static void main(String[]args) {
+
+        Rentagle r = new Rentagle();
+        r.a = 10;
+        r.b = 55;
+        System.out.println("Cумму вот этой хуйни ты хоте получить, братан ?" + " "+ r.a +"и" +r.b + "=" + area(r) );
 
     }
 
-        public static void rout() {
+    public static int area (Rentagle r){
 
-            int wayOne = 26;
-            int wayTwo = 30;
-            double wayThree =10.5;
-            double mainWay = wayOne + wayTwo + wayThree;
-            System.out.println("Ваш путь составит:" + mainWay +" "+ "киллометров");
+        return r.a +r.b;
+    }
+
+
+        /*
+
+
+        Square s = new Square();
+        s.l=5;
+        System.out.println("Площадь прямоугольника со стороной" + s.l + "=" + area(s) +"!");
+
+    }
+
+       public static double area (Square s){
+
+        return s.l*s.l;
+
+    }
 
 
 */
 
 
 
-
-
-            public static double  areaOfCube (double a, double b, double c) {
-                return a + 2*b * c;
-
-            }
-
-
-
-
-
-
-        }
+}
