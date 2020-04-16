@@ -1,38 +1,25 @@
 package ru.stqa.pft.sandbox;
 
+import java.util.Scanner;
+
 public class MyFirstProgram {
     public static void main(String[]args) {
 
-        Rentagle r = new Rentagle();
-        r.a = 10;
-        r.b = 55;
-        System.out.println("Cумму вот этой хуйни ты хоте получить, братан ?" + " "+ r.a +"и" +r.b + "=" + area(r) );
-
-    }
-
-    public static int area (Rentagle r){
-
-        return r.a +r.b;
-    }
-
-
+        Car car = new Car(2.500, 330,"blue", "volvo");
         /*
+        Scanner in = new Scanner (System.in);
+        System.out.println("Какую марку вы предпочитаете? " );
+        String mark = in.nextLine();
+        System.out.println("Какой вы предпочитаете цвет? " );
+        String color = in.nextLine();
 
+         */
 
-        Square s = new Square();
-        s.l=5;
-        System.out.println("Площадь прямоугольника со стороной" + s.l + "=" + area(s) +"!");
+        System.out.println("Автомобиль каторый вы выбрали имеет следующие параметры:" + "Вес - " + " "+ car.weight + " Максимальную скорость - "+ car.maxSpeed + " "+ "color" +" "+ "mark");
+        System.out.println("Спасибо, что выбрали наш автосалон? " );
+
 
     }
-
-       public static double area (Square s){
-
-        return s.l*s.l;
-
-    }
-
-
-*/
 
 
 
